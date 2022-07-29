@@ -4,52 +4,52 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27cc2121-971c-4a5b-ab1c-9663694fd3b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/MsCleanDeadballApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/application/usecases/player/FindPlayerById.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/exception/DomainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/exception/NotAuthorizedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/validation/ValidatorHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/game/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/game/enumeration/GameMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/PlayerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/AgeGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/BonusTrait.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/FieldPosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/Handedness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/PitchDie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/PlayerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/Stat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/BuntingTableResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/BuntingTableSituation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/DefenseTableResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/DoubleStealTableResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/HitAndRunTableOutcome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/HitAndRunTableResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/HitTableResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/OutTableResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/StealTableResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/SwingTableResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/team/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/exceptions_en_US.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_en_US.properties" afterDir="false" />
+    <list default="true" id="27cc2121-971c-4a5b-ab1c-9663694fd3b1" name="Changes" comment="Player Domain, and First UseCase">
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/config/PropertiesManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/season/Season.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/config/PlayerCRUDConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/config/SpringBootPropertiesManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/common/exceptions/BadRequestPreRegistroException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/common/exceptions/InternalErrorPreRegistroException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/common/exceptions/NotAuthorizedPreRegistroException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/common/exceptions/NotFoundPreRegistroException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/GetOnePlayerByUuidController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/mapper/request/PlayerAPIRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/mapper/request/PlayerAPIRequestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/mapper/response/PlayerAPIResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/mapper/response/PlayerAPIResponseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/frameworks/mongo/player/PlayerRepositoryAdapterMongo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/frameworks/mongo/player/mapper/PlayerEntityMongo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/frameworks/mongo/player/mapper/PlayerEntityMongoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/MsCleanDeadballApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/MsCleanDeadballApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/application/usecases/player/FindPlayerById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/usecases/player/FindPlayerById.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/exception/DomainException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/exceptions/DomainException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/exception/NotAuthorizedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/exceptions/NotAuthorizedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/exceptions/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/validation/ValidatorHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/helpers/ValidatorHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/game/enumeration/GameMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/game/enumeration/GameMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/PlayerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/AgeGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/AgeGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/BonusTrait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/BonusTrait.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/FieldPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/FieldPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/Handedness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/Handedness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/PitchDie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/PitchDie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/PlayerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/PlayerType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/Stat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/BuntingTableResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/BuntingTableResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/BuntingTableSituation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/BuntingTableSituation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/DefenseTableResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/DefenseTableResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/DoubleStealTableResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/DoubleStealTableResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/HitAndRunTableOutcome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/HitAndRunTableOutcome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/HitAndRunTableResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/HitAndRunTableResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/HitTableResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/HitTableResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/OutTableResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/OutTableResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/StealTableResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/StealTableResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/SwingTableResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/SwingTableResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/exceptions_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/exceptions_en_US.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "D:/Desarrollo/Apps/ms-clean-deadball/ms-clean-deadball/src/main/resources",
+    "last_opened_file_path": "D:/Desarrollo/Apps/ms-clean-deadball/ms-clean-deadball/src/main/java/es/pmac/deadball/infrastructure/drivers/api/common/exceptions",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.32413793",
@@ -118,18 +118,22 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\java\es\pmac\deadball\infrastructure\drivers\api\common\exceptions" />
+      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\java\es\pmac\deadball\domain\common" />
+      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\java\es\pmac\deadball\infrastructure\config" />
       <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\resources" />
       <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\java\es\pmac\deadball\domain\common\resources" />
-      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\java\es\pmac\deadball\domain\table\enumeration" />
-      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\java\es\pmac\deadball\domain\player\enumeration" />
-      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\resources" />
       <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\java\es\pmac\deadball\domain\player\resources" />
       <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="es.pmac.deadball.infrastructure.drivers.api.player" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="es.pmac.deadball.infrastructure.drivers.api.player.mapper.request" />
       <recent name="es.pmac.deadball.domain.common.exception" />
       <recent name="es.pmac.deadball.domain.game.enumeration" />
     </key>
@@ -140,7 +144,7 @@
       <module name="ms-clean-deadball.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="es.pmac.deadball.*" />
+          <option name="PATTERN" value="es.pmac.deadball.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,7 +154,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MsCleanDeadballApplication" />
+        <item itemvalue="Application.es.pmac.deadball.MsCleanDeadballApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +167,14 @@
       <option name="presentableId" value="Default" />
       <updated>1659101867415</updated>
     </task>
+    <task id="LOCAL-00001" summary="Player Domain, and First UseCase">
+      <created>1659116583555</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659116583555</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,5 +187,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Player Domain, and First UseCase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player Domain, and First UseCase" />
   </component>
 </project>

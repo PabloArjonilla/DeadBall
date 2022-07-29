@@ -1,7 +1,7 @@
 package es.pmac.deadball.domain.player;
 
-import es.pmac.deadball.domain.common.exception.DomainException;
-import es.pmac.deadball.domain.common.validation.ValidatorHelper;
+import es.pmac.deadball.domain.common.exceptions.DomainException;
+import es.pmac.deadball.domain.common.helpers.ValidatorHelper;
 import lombok.Builder;
 import lombok.Data;
 
@@ -24,9 +24,7 @@ public class Player {
 
     private void Validate() {
 
-
         List<Exception> exceptions = new ArrayList<>();
-        StringBuilder errorMessages = new StringBuilder();
 
         try {
             ValidatorHelper.validUUID(this.id, "id");
@@ -42,6 +40,7 @@ public class Player {
 
 
         if (!exceptions.isEmpty()) {
+            StringBuilder errorMessages = new StringBuilder();
             exceptions.forEach(exception -> errorMessages.append(exception.getMessage() + " "));
             throw new DomainException(String.format(ValidatorHelper.getResourceBundle().getString("exceptions.validDomain"), "Player", errorMessages));
         }

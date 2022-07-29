@@ -1,4 +1,4 @@
-package es.pmac.deadball.application.usecases.player;
+package es.pmac.deadball.usecases.player;
 
 import es.pmac.deadball.domain.player.Player;
 import es.pmac.deadball.domain.player.PlayerRepository;
