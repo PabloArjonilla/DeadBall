@@ -1,0 +1,51 @@
+server:
+  port: 8094
+  error:
+    include-message: always
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: ms-deadball
+  data:
+    mongodb:
+      auto-index-creation: true
+      host: localhost
+      port: 27017
+      database: deadball
+
+logging:
+  pattern.console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} - %logger{36} - %msg%n"
+  level:
+    org.springframework.level.cloud: DEBUG
+    es.ja.sae.email: DEBUG
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url.defaultZone: http://localhost:8761/deadball
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        sliding-window-size: 6
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 20s
+        permitted-number-of-calls-in-half-open-state: 4
+        slow-call-rate-threshold: 50
+        slow-call-duration-threshold: 2s
+    instances:
+      auth:
+        base-config: default
+  timelimiter:
+    configs:
+      default:
+        timeout-duration: 300s
+    instances:
+      auth:
+        base-config: default
+
+delete-dias: 3

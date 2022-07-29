@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="27cc2121-971c-4a5b-ab1c-9663694fd3b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/MsCleanDeadballApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/application/usecases/player/FindPlayerById.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/exception/DomainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/exception/NotAuthorizedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/common/validation/ValidatorHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/game/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/game/enumeration/GameMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/PlayerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/AgeGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/BonusTrait.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/FieldPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/Handedness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/PitchDie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/PlayerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/player/enumeration/Stat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/BuntingTableResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/BuntingTableSituation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/DefenseTableResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/DoubleStealTableResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/HitAndRunTableOutcome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/HitAndRunTableResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/HitTableResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/OutTableResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/StealTableResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/table/enumeration/SwingTableResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/team/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/exceptions_en_US.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_en_US.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ms-clean-deadball" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectId" id="2CcVTPnFzfDO7TxYhSlEPPvYf7Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "D:/Desarrollo/Apps/ms-clean-deadball/ms-clean-deadball/src/main/resources",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.32413793",
+    "settings.editor.selected.configurable": "actions.on.save"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\resources" />
+      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\java\es\pmac\deadball\domain\common\resources" />
+      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\java\es\pmac\deadball\domain\table\enumeration" />
+      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\java\es\pmac\deadball\domain\player\enumeration" />
+      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\resources" />
+      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball\src\main\java\es\pmac\deadball\domain\player\resources" />
+      <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="es.pmac.deadball.domain.common.exception" />
+      <recent name="es.pmac.deadball.domain.game.enumeration" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MsCleanDeadballApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="es.pmac.deadball.MsCleanDeadballApplication" />
+      <module name="ms-clean-deadball.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.pmac.deadball.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MsCleanDeadballApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27cc2121-971c-4a5b-ab1c-9663694fd3b1" name="Changes" comment="" />
+      <created>1659101867415</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659101867415</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
