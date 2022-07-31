@@ -11,21 +11,16 @@ spring:
   data:
     mongodb:
       auto-index-creation: true
-      host: localhost
-      port: 27017
+      host: mongodb+srv://diazenylium:<password>@deadball.rlyiaum.mongodb.net/?retryWrites=true&w=majority
+      username: diazenylium
+      password: n2horioles
       database: deadball
 
 logging:
   pattern.console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} - %logger{36} - %msg%n"
   level:
     org.springframework.level.cloud: DEBUG
-    es.ja.sae.email: DEBUG
-
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url.defaultZone: http://localhost:8761/deadball
+    es.pmac.deadball: DEBUG
 
 resilience4j:
   circuitbreaker:

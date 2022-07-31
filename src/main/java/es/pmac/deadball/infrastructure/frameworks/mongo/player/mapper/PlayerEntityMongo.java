@@ -16,7 +16,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class PlayerEntityMongo {
 
     @Id
-    private String uuid;
+    private String id;
 
     private String name;
 }

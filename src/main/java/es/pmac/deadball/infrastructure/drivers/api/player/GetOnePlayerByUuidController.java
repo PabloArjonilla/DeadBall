@@ -1,6 +1,6 @@
 package es.pmac.deadball.infrastructure.drivers.api.player;
 
-import es.pmac.deadball.domain.player.Player;
+import es.pmac.deadball.domain.entity.player.Player;
 import es.pmac.deadball.usecases.player.FindPlayerById;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

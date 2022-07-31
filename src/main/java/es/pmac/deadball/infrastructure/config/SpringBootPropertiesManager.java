@@ -1,6 +1,6 @@
 package es.pmac.deadball.infrastructure.config;
 
-import es.pmac.deadball.domain.common.config.PropertiesManager;
+import es.pmac.deadball.domain.config.PropertiesManager;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;

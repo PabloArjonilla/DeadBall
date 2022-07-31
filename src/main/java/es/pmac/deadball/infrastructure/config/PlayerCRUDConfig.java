@@ -1,6 +1,6 @@
 package es.pmac.deadball.infrastructure.config;
 
-import es.pmac.deadball.domain.player.PlayerRepository;
+import es.pmac.deadball.domain.entity.player.PlayerRepository;
 import es.pmac.deadball.usecases.player.FindPlayerById;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

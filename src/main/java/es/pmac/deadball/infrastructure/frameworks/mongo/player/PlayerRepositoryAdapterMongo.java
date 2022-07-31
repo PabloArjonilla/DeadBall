@@ -1,8 +1,8 @@
 package es.pmac.deadball.infrastructure.frameworks.mongo.player;
 
 import es.pmac.deadball.domain.common.exceptions.NotFoundException;
-import es.pmac.deadball.domain.player.Player;
-import es.pmac.deadball.domain.player.PlayerRepository;
+import es.pmac.deadball.domain.entity.player.Player;
+import es.pmac.deadball.domain.entity.player.PlayerRepository;
 import es.pmac.deadball.infrastructure.frameworks.mongo.player.mapper.PlayerEntityMongo;
 import es.pmac.deadball.infrastructure.frameworks.mongo.player.mapper.PlayerEntityMongoMapper;
 import lombok.RequiredArgsConstructor;
