@@ -14,11 +14,11 @@ import java.util.List;
 @Builder(toBuilder = true)
 public class Player {
 
-    private Uuid id;
+    private Uuid uuid;
     private String name;
 
-    private Player(Uuid id, String name) {
-        this.id = id;
+    private Player(Uuid uuid, String name) {
+        this.uuid = uuid;
         this.name = name;
         Validate();
     }

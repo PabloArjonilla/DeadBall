@@ -1,5 +1,6 @@
 package es.pmac.deadball.infrastructure.drivers.api.common.exceptions;
 
+//TODO redo
 public class BadRequestPreRegistroException extends RuntimeException {
 
     public BadRequestPreRegistroException() {

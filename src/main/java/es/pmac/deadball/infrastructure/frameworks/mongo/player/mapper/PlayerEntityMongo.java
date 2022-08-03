@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "player")
@@ -15,8 +14,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder(toBuilder = true)
 public class PlayerEntityMongo {
 
-    @Id
-    private String id;
-
+    private String uuid;
     private String name;
 }

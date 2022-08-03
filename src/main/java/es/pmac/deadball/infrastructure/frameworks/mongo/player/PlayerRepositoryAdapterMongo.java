@@ -8,9 +8,9 @@ import es.pmac.deadball.infrastructure.frameworks.mongo.player.mapper.PlayerEnti
 import lombok.RequiredArgsConstructor;
 import lombok.extern.jbosslog.JBossLog;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
-
-import java.util.Optional;
 
 @JBossLog
 @Repository
@@ -21,9 +21,9 @@ public class PlayerRepositoryAdapterMongo implements PlayerRepository {
 
     @Override
     public Player findById(String id) {
-        return Optional.ofNullable(mongoTemplate.findById(id, PlayerEntityMongo.class))
-                .map(PlayerEntityMongoMapper.INSTANCE::entityToModel)
-                .orElseThrow(NotFoundException::new);
+
+        return mongoTemplate.find(new Query().addCriteria(Criteria.where("uuid").is(id)), PlayerEntityMongo.class)
+                .stream().map(PlayerEntityMongoMapper.INSTANCE::entityToModel).toList().stream().findAny().orElseThrow(NotFoundException::new);
     }
 
 }

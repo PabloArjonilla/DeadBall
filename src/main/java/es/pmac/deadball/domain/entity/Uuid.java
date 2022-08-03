@@ -24,7 +24,7 @@ public class Uuid {
         ValidatorHelper.validateNonNull(id, "id");
 
         if (!id.matches("^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}")) {
-            throw new DomainException(String.format(ValidatorHelper.getResourceBundle().getString("domain.validID"), "id"));
+            throw new DomainException(String.format(ValidatorHelper.getResourceBundle().getString("domain.validUuid"), "uuid"));
         }
     }
 }
