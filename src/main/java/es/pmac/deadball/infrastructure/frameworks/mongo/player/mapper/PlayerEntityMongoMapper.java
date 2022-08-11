@@ -12,14 +12,16 @@ public interface PlayerEntityMongoMapper {
     PlayerEntityMongoMapper INSTANCE = Mappers.getMapper(PlayerEntityMongoMapper.class);
 
     @Mappings({
-            @Mapping(target = "uuid", source = "uuid.value"),
+            @Mapping(target = "id", source = "id"),
             @Mapping(target = "name", source = "name"),
+            @Mapping(target = "team", source = "team"),
     })
     PlayerEntityMongo modelToEntity(Player source);
 
     @Mappings({
-            @Mapping(target = "uuid.value", source = "uuid"),
+            @Mapping(target = "id", source = "id"),
             @Mapping(target = "name", source = "name"),
+            @Mapping(target = "team", source = "team"),
     })
     Player entityToModel(PlayerEntityMongo source);
 }

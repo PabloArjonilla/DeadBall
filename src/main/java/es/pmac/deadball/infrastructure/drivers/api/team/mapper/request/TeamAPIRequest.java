@@ -1,4 +1,4 @@
-package es.pmac.deadball.infrastructure.drivers.api.player.mapper.response;
+package es.pmac.deadball.infrastructure.drivers.api.team.mapper.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,9 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder(toBuilder = true)
-public class PlayerAPIResponse {
-    //TODO No usado por el controller, devuelve objeto de dominio
+public class TeamAPIRequest {
+
     private String id;
     private String name;
-    private String team;
 }

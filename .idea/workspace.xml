@@ -4,15 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27cc2121-971c-4a5b-ab1c-9663694fd3b1" name="Changes" comment="Player Domain, and First UseCase">
+    <list default="true" id="27cc2121-971c-4a5b-ab1c-9663694fd3b1" name="Changes" comment="Working local Mongo DB connection">
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/entity/team/TeamRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/GetAllPlayersByTeamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/team/GetOneTeamByIdController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/team/mapper/request/TeamAPIRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/team/mapper/request/TeamAPIRequestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/team/mapper/response/TeamAPIResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/team/mapper/response/TeamAPIResponseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/frameworks/mongo/team/TeamRepositoryAdapterMongo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/frameworks/mongo/team/mapper/TeamEntityMongo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/frameworks/mongo/team/mapper/TeamEntityMongoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/usecases/player/FindPlayersByTeam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/usecases/team/FindTeamById.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/entity/Uuid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/entity/Uuid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/entity/Uuid.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/entity/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/entity/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/common/exceptions/BadRequestPreRegistroException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/common/exceptions/BadRequestPreRegistroException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/common/exceptions/InternalErrorPreRegistroException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/common/exceptions/InternalErrorPreRegistroException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/common/exceptions/NotAuthorizedPreRegistroException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/common/exceptions/NotAuthorizedPreRegistroException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/common/exceptions/NotFoundPreRegistroException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/common/exceptions/NotFoundPreRegistroException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/entity/player/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/entity/player/PlayerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/entity/team/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/domain/entity/team/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/GetOnePlayerByUuidController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/GetOnePlayerByIdController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/mapper/request/PlayerAPIRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/mapper/request/PlayerAPIRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/mapper/request/PlayerAPIRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/mapper/request/PlayerAPIRequestMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/mapper/response/PlayerAPIResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/drivers/api/player/mapper/response/PlayerAPIResponse.java" afterDir="false" />
@@ -20,8 +30,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/frameworks/mongo/player/PlayerRepositoryAdapterMongo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/frameworks/mongo/player/PlayerRepositoryAdapterMongo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/frameworks/mongo/player/mapper/PlayerEntityMongo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/frameworks/mongo/player/mapper/PlayerEntityMongo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/frameworks/mongo/player/mapper/PlayerEntityMongoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/pmac/deadball/infrastructure/frameworks/mongo/player/mapper/PlayerEntityMongoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/exceptions_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/exceptions_en_US.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +61,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -84,11 +92,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "D:/pmac/Desarrollo/Apps/GIT/MSPreRegistro",
+    "last_opened_file_path": "D:/pmac/Desarrollo/Apps/GIT/MSCitaPrevia",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.32413793",
-    "settings.editor.selected.configurable": "actions.on.save"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -105,9 +113,12 @@
       <recent name="D:\Desarrollo\Apps\ms-clean-deadball\ms-clean-deadball" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="es.pmac.deadball.infrastructure.frameworks.mongo.team" />
       <recent name="es.pmac.deadball.infrastructure.drivers.api.player" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="es.pmac.deadball.infrastructure.drivers.api.team" />
+      <recent name="es.pmac.deadball.usecases.player" />
       <recent name="es.pmac.deadball.infrastructure.drivers.api.player.mapper.request" />
       <recent name="es.pmac.deadball.domain.common.exception" />
       <recent name="es.pmac.deadball.domain.game.enumeration" />
@@ -144,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659116583555</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Working local Mongo DB connection">
+      <created>1659535025045</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659535025045</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +178,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Player Domain, and First UseCase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Player Domain, and First UseCase" />
+    <MESSAGE value="Working local Mongo DB connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working local Mongo DB connection" />
   </component>
 </project>

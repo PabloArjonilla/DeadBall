@@ -1,4 +1,4 @@
-package es.pmac.deadball.infrastructure.drivers.api.player;
+package es.pmac.deadball.infrastructure.drivers.api.team;
 
 import es.pmac.deadball.domain.entity.player.Player;
 import es.pmac.deadball.usecases.player.FindPlayerById;
@@ -10,12 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class GetOnePlayerByUuidController {
+public class GetOneTeamByIdController {
 
     private final FindPlayerById findPlayerById;
 
-    @GetMapping(value = "/players/{uuid}")
-    public ResponseEntity<Player> findPlayerById(@PathVariable("uuid") String uuid) {
-        return ResponseEntity.ok(findPlayerById.execute(uuid));
+    @GetMapping(value = "/players/{id}")
+    public ResponseEntity<Player> findPlayerById(@PathVariable("id") String id) {
+        return ResponseEntity.ok(findPlayerById.execute(id));
     }
+
 }

@@ -22,8 +22,13 @@ public class PlayerRepositoryAdapterMongo implements PlayerRepository {
     @Override
     public Player findById(String id) {
 
-        return mongoTemplate.find(new Query().addCriteria(Criteria.where("uuid").is(id)), PlayerEntityMongo.class)
+        return mongoTemplate.find(new Query().addCriteria(Criteria.where("id").is(id)), PlayerEntityMongo.class)
                 .stream().map(PlayerEntityMongoMapper.INSTANCE::entityToModel).toList().stream().findAny().orElseThrow(NotFoundException::new);
     }
 
+ /*   @Override
+    public void save(Player player) {
+        mongoTemplate.save(PlayerEntityMongoMapper.INSTANCE.modelToEntity(player));
+    }
+*/
 }

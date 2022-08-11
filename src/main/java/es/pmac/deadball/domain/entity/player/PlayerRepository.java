@@ -1,21 +1,21 @@
 package es.pmac.deadball.domain.entity.player;
 
+import java.util.List;
+
 public interface PlayerRepository {
 
     Player findById(String id);
+    
+    List<Player> findByTeam(String id);
 
-    //TODO Add usecase List<Player> findAll();
+    /*
+    List<Player> findByTeam(Team team);
 
-    //TODO Add usecase List<Player> findAllByTeam(Team team);
+    void save(Player player);
 
-    //TODO Add usecase void save(Player player);
+    void deleteOne(String id);
 
-    //TODO Add usecase void saveDelete(Player player);
-
-    //TODO Add usecase void deleteOne(String id);
-
-    //TODO Add usecase void delete(Player player);
-
-    //TODO Add usecase void deleteAll();
+    void deleteOne(Player player);
+    */
 
 }

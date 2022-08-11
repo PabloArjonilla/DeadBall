@@ -12,8 +12,9 @@ public interface PlayerAPIRequestMapper {
     PlayerAPIRequestMapper INSTANCE = Mappers.getMapper(PlayerAPIRequestMapper.class);
 
     @Mappings({
-            @Mapping(target = "uuid.value", source = "uuid"),
+            @Mapping(target = "id", source = "id"),
             @Mapping(target = "name", source = "name"),
+            @Mapping(target = "team.id", source = "team")
     })
     Player requestToModel(PlayerAPIRequest source);
 

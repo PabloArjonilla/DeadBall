@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder(toBuilder = true)
 public class PlayerAPIRequest {
 
-    private String uuid;
+    private String id;
     private String name;
+    private String team;
 }
